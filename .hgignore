@@ -1,0 +1,16 @@
+syntax: glob
+
+*.
+*.class
+.classpath
+.project
+.settings
+*.swp
+*.bak
+*~
+*.~ml
+*.orig
+*.tlog
+target
+
+syntax: regexp
