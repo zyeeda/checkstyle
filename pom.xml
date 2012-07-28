@@ -7,10 +7,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zyeeda</groupId>
-    <artifactId>checkstyle</artifactId>
-    <version>1</version>
+    <artifactId>zyeeda-checkstyle</artifactId>
+    <version>1-SNAPSHOT</version>
     <name>Zyeeda :: Checkstyle</name>
     <packaging>jar</packaging>
+
+    <properties>
+        <dist.repo.host>localhost</dist.repo.host>
+        <dist.repo.port>8081</dist.repo.port>
+    </properties>
 
     <build>
         <plugins>
@@ -23,7 +28,54 @@
                     <includeEmptyDirs>true</includeEmptyDirs>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-plugin</artifactId>
+                <version>1.7</version>
+            </plugin>
         </plugins>
     </build>
+
+    <scm>
+        <connection>scm:hg:http://bitbucket.org/zyeeda/zyeeda-checkstyle</connection>
+        <developerConnection>scm:hg:${basedir}/../${project.artifactId}</developerConnection>
+        <url>http://bitbucket.org/zyeeda/zyeeda-checkstyle</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>zyeeda.repo</id>
+            <name>Internal Maven Repository of Zyeeda Co. Ltd.</name>
+            <url>http://${dist.repo.host}:${dist.repo.port}/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>zyeeda.repo</id>
+            <name>Internal Maven Repoistory of Zyeeda Co. Ltd.</name>
+            <url>http://${dist.repo.host}:${dist.repo.port}/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
