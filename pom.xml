@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-    xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zyeeda</groupId>
     <artifactId>zyeeda-checkstyle</artifactId>
-    <version>1-SNAPSHOT</version>
+    <version>1</version>
     <name>Zyeeda :: Checkstyle</name>
     <packaging>jar</packaging>
 
@@ -58,7 +56,7 @@
     <scm>
         <connection>scm:hg:http://bitbucket.org/zyeeda/zyeeda-checkstyle</connection>
         <url>http://bitbucket.org/zyeeda/zyeeda-checkstyle</url>
-        <tag>HEAD</tag>
+        <tag>v1</tag>
     </scm>
 
     <distributionManagement>
