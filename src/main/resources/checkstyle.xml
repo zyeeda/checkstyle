@@ -6,12 +6,13 @@
 -->
 <!--
     Checkstyle-Configuration: zyeeda-1.0.0
-    Description: 
+    Description:
 Checkstyle configuration that checks the sun coding conventions.
 -->
 <module name="Checker">
   <property name="severity" value="warning"/>
   <module name="TreeWalker">
+    <module name="FileContentsHolder"/>
     <module name="JavadocMethod">
       <property name="allowMissingPropertyJavadoc" value="true"/>
       <property name="suppressLoadErrors" value="true"/>
@@ -105,4 +106,9 @@ Checkstyle configuration that checks the sun coding conventions.
     <property name="message" value="Line has trailing spaces."/>
   </module>
   <module name="StrictDuplicateCode"/>
+  <module name="SuppressionFilter">
+    <property name="file" value="suppressions.xml"/>
+  </module>
+  <module name="SuppressionCommentFilter"/>
+  <module name="SuppressWithNearbyCommentFilter"/>
 </module>
