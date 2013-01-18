@@ -50,16 +50,19 @@ Checkstyle configuration that checks the sun coding conventions.
     <module name="LeftCurly"/>
     <module name="NeedBraces"/>
     <module name="RightCurly"/>
-    <module name="DoubleCheckedLocking"/>
     <module name="EmptyStatement"/>
     <module name="EqualsHashCode"/>
     <module name="HiddenField">
       <property name="ignoreConstructorParameter" value="true"/>
       <property name="ignoreSetter" value="true"/>
+      <property name="ignoreAbstractMethods" value="true"/>
     </module>
     <module name="IllegalInstantiation"/>
     <module name="InnerAssignment"/>
-    <module name="MagicNumber"/>
+    <module name="MagicNumber">
+      <property name="ignoreHashCodeMethod" value="true"/>
+      <property name="ignoreAnnotation" value="true"/>
+    </module>
     <module name="MissingSwitchDefault"/>
     <module name="RedundantThrows">
       <property name="suppressLoadErrors" value="true"/>
@@ -73,7 +76,10 @@ Checkstyle configuration that checks the sun coding conventions.
     <module name="ArrayTypeStyle"/>
     <module name="FinalParameters"/>
     <module name="UpperEll"/>
-    <module name="ImportOrder"/>
+    <module name="ImportOrder">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
     <module name="GenericWhitespace"/>
     <module name="GenericWhitespace"/>
     <module name="DefaultComesLast"/>
