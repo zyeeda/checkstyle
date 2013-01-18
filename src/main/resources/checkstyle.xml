@@ -6,7 +6,7 @@
 -->
 <!--
     Checkstyle-Configuration: zyeeda-1.0.0
-    Description:
+    Description: 
 Checkstyle configuration that checks the sun coding conventions.
 -->
 <module name="Checker">
@@ -106,9 +106,9 @@ Checkstyle configuration that checks the sun coding conventions.
     <property name="message" value="Line has trailing spaces."/>
   </module>
   <module name="StrictDuplicateCode"/>
-  <module name="SuppressionFilter">
-    <property name="file" value="suppressions.xml"/>
-  </module>
   <module name="SuppressionCommentFilter"/>
   <module name="SuppressWithNearbyCommentFilter"/>
+  <module name="SuppressionFilter">
+    <property name="file" value="https://bitbucket.org/zyeeda/zyeeda-checkstyle/raw/6a82dd85b5cc14bca8f2476465513a2f56fff95f/src/main/resources/suppressions.xml"/>
+  </module>
 </module>
