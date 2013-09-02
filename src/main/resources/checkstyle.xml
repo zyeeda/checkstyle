@@ -6,8 +6,8 @@
 -->
 <!--
     Checkstyle-Configuration: zyeeda-1.0.0
-    Description: 
-Checkstyle configuration that checks the sun coding conventions.
+    Description:
+Checkstyle configuration that checks the Zyeeda coding conventions.
 -->
 <module name="Checker">
   <property name="severity" value="warning"/>
