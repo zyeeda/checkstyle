@@ -84,7 +84,7 @@
                 <snapshotRepository>
                     <id>zyeeda.repo</id>
                     <name>Internal Maven Repoistory of Zyeeda Co. Ltd.</name>
-                    <url>http://10.1.2.11/nexus/content/repositories/snapshots</url>
+                    <url>http://10.1.2.11:8081/nexus/content/repositories/snapshots</url>
                 </snapshotRepository>
             </distributionManagement>
         </profile>
