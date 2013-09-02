@@ -111,6 +111,6 @@ Checkstyle configuration that checks the sun coding conventions.
   <module name="SuppressionCommentFilter"/>
   <module name="SuppressWithNearbyCommentFilter"/>
   <module name="SuppressionFilter">
-    <property name="file" value="/Users/tangrui/Code/zyeeda/zyeeda-checkstyle/src/main/resources/suppressions.xml"/>
+    <property name="file" value="https://bitbucket.org/zyeeda/zyeeda-checkstyle/raw/8dd94cb54ebd116cb43e7f3b4ef2334214698e13/src/main/resources/suppressions.xml"/>
   </module>
 </module>
