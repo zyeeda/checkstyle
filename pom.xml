@@ -6,7 +6,7 @@
 
     <groupId>com.zyeeda</groupId>
     <artifactId>zyeeda-checkstyle</artifactId>
-    <version>2-SNAPSHOT</version>
+    <version>2</version>
     <name>Zyeeda :: Checkstyle</name>
     <packaging>jar</packaging>
 
@@ -56,7 +56,7 @@
     <scm>
         <connection>scm:hg:http://bitbucket.org/zyeeda/zyeeda-checkstyle</connection>
         <url>http://bitbucket.org/zyeeda/zyeeda-checkstyle</url>
-        <tag>HEAD</tag>
+        <tag>v2</tag>
     </scm>
 
     <distributionManagement>
