@@ -6,7 +6,7 @@
 -->
 <!--
     Checkstyle-Configuration: zyeeda-1.0.0
-    Description:
+    Description: 
 Checkstyle configuration that checks the Zyeeda coding conventions.
 -->
 <module name="Checker">
@@ -90,9 +90,7 @@ Checkstyle configuration that checks the Zyeeda coding conventions.
     <module name="UnnecessaryParentheses"/>
     <module name="ArrayTrailingComma"/>
     <module name="OneStatementPerLine"/>
-    <module name="RequireThis">
-      <property name="checkMethods" value="false"/>
-    </module>
+    <module name="RequireThis"/>
   </module>
   <module name="JavadocPackage"/>
   <module name="NewlineAtEndOfFile">
