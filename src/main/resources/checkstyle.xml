@@ -104,7 +104,7 @@ Checkstyle configuration that checks the Zyeeda coding conventions.
     <property name="message" value="Line has trailing spaces."/>
   </module>
   <module name="StrictDuplicateCode">
-    <property name="min" value="20"/>
+    <property name="min" value="30"/>
   </module>
   <module name="SuppressionCommentFilter"/>
   <module name="SuppressWithNearbyCommentFilter"/>
