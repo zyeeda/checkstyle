@@ -12,6 +12,7 @@ Checkstyle configuration that checks the Zyeeda coding conventions.
 <module name="Checker">
   <property name="severity" value="warning"/>
   <module name="TreeWalker">
+    <property name="tabWidth" value="4"/>
     <module name="FileContentsHolder"/>
     <module name="JavadocMethod">
       <property name="allowMissingPropertyJavadoc" value="true"/>
@@ -91,6 +92,16 @@ Checkstyle configuration that checks the Zyeeda coding conventions.
     <module name="ArrayTrailingComma"/>
     <module name="OneStatementPerLine"/>
     <module name="RequireThis"/>
+    <module name="CovariantEquals"/>
+    <module name="AvoidInlineConditionals"/>
+    <module name="MagicNumber">
+      <property name="ignoreHashCodeMethod" value="true"/>
+      <property name="ignoreAnnotation" value="true"/>
+    </module>
+    <module name="ModifiedControlVariable"/>
+    <module name="ParameterAssignment"/>
+    <module name="StringLiteralEquality"/>
+    <module name="InnerTypeLast"/>
   </module>
   <module name="JavadocPackage"/>
   <module name="NewlineAtEndOfFile">
@@ -111,4 +122,5 @@ Checkstyle configuration that checks the Zyeeda coding conventions.
   <module name="SuppressionFilter">
     <property name="file" value="https://bitbucket.org/zyeeda/zyeeda-checkstyle/raw/8dd94cb54ebd116cb43e7f3b4ef2334214698e13/src/main/resources/suppressions.xml"/>
   </module>
+  <module name="UniqueProperties"/>
 </module>
