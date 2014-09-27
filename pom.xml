@@ -18,6 +18,21 @@ $License$
     <name>Zyeeda :: Checkstyle</name>
     <packaging>jar</packaging>
 
+    <properties>
+        <localhost.maven.repo.releases>
+            http://localhost:8081/nexus/content/repositories/releases
+        </localhost.maven.repo.releases>
+        <localhost.maven.repo.snapshots>
+            http://localhost:8081/nexus/content/repositories/snapshots
+        </localhost.maven.repo.snapshots>
+        <internal.maven.repo.releases>
+            http://10.1.2.11:8081/nexus/content/repositories/releases
+        </internal.maven.repo.releases>
+        <internal.maven.repo.snapshots>
+            http://10.1.2.11:8081/nexus/content/repositories/snapshots
+        </internal.maven.repo.snapshots>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -69,14 +84,14 @@ $License$
 
     <distributionManagement>
         <repository>
-            <id>zyeeda.repo.releases</id>
-            <name>Internal Maven Repository of Zyeeda Co. Ltd.</name>
-            <url>http://localhost:8081/nexus/content/repositories/releases</url>
+            <id>maven.repo.releases</id>
+            <name>Localhost Maven Release Repository</name>
+            <url>${localhost.maven.repo.releases}</url>
         </repository>
         <snapshotRepository>
-            <id>zyeeda.repo.snapshots</id>
-            <name>Internal Maven Repoistory of Zyeeda Co. Ltd.</name>
-            <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+            <id>maven.repo.snapshots</id>
+            <name>Localhost Maven Snapshot Repoistory</name>
+            <url>${localhost.maven.reop.snapshots}</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -85,14 +100,14 @@ $License$
             <id>internal-release</id>
             <distributionManagement>
                 <repository>
-                    <id>zyeeda.repo.releases</id>
-                    <name>Internal Maven Repository of Zyeeda Co. Ltd.</name>
-                    <url>http://10.1.2.11:8081/nexus/content/repositories/releases</url>
+                    <id>maven.repo.releases</id>
+                    <name>Internal Maven Release Repository</name>
+                    <url>${internal.maven.repo.releases}</url>
                 </repository>
                 <snapshotRepository>
-                    <id>zyeeda.repo.snapshots</id>
-                    <name>Internal Maven Repoistory of Zyeeda Co. Ltd.</name>
-                    <url>http://10.1.2.11:8081/nexus/content/repositories/snapshots</url>
+                    <id>maven.repo.snapshots</id>
+                    <name>Internal Maven Snapshot Repoistory</name>
+                    <url>${internal.maven.repo.snapshots}</url>
                 </snapshotRepository>
             </distributionManagement>
         </profile>
