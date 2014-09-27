@@ -6,15 +6,13 @@
 $License$
 -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zyeeda</groupId>
     <artifactId>zyeeda-checkstyle</artifactId>
-    <version>3-SNAPSHOT</version>
+    <version>3</version>
     <name>Zyeeda :: Checkstyle</name>
     <packaging>jar</packaging>
 
@@ -79,7 +77,7 @@ $License$
     <scm>
         <connection>scm:hg:http://bitbucket.org/zyeeda/checkstyle</connection>
         <url>http://bitbucket.org/zyeeda/checkstyle</url>
-        <tag>HEAD</tag>
+        <tag>v3</tag>
     </scm>
 
     <distributionManagement>
