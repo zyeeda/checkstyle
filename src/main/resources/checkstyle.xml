@@ -5,9 +5,8 @@
     This configuration file was written by the eclipse-cs plugin configuration editor
 -->
 <!--
-    Checkstyle-Configuration: zyeeda-1.0.0
-    Description: 
-Checkstyle configuration that checks the Zyeeda coding conventions.
+    Checkstyle-Configuration: Zyeeda
+    Description: none
 -->
 <module name="Checker">
   <property name="severity" value="warning"/>
@@ -66,9 +65,6 @@ Checkstyle configuration that checks the Zyeeda coding conventions.
       <property name="ignoreAnnotation" value="true"/>
     </module>
     <module name="MissingSwitchDefault"/>
-    <module name="RedundantThrows">
-      <property name="suppressLoadErrors" value="true"/>
-    </module>
     <module name="SimplifyBooleanExpression"/>
     <module name="SimplifyBooleanReturn"/>
     <module name="FinalClass"/>
@@ -78,12 +74,6 @@ Checkstyle configuration that checks the Zyeeda coding conventions.
     <module name="ArrayTypeStyle"/>
     <module name="FinalParameters"/>
     <module name="UpperEll"/>
-    <module name="ImportOrder">
-      <property name="severity" value="ignore"/>
-      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
-    </module>
-    <module name="GenericWhitespace"/>
-    <module name="GenericWhitespace"/>
     <module name="DefaultComesLast"/>
     <module name="DeclarationOrder"/>
     <module name="EqualsAvoidNull"/>
@@ -102,8 +92,39 @@ Checkstyle configuration that checks the Zyeeda coding conventions.
     <module name="ParameterAssignment"/>
     <module name="StringLiteralEquality"/>
     <module name="InnerTypeLast"/>
+    <module name="AnnotationUseStyle"/>
+    <module name="MissingDeprecated"/>
+    <module name="MissingOverride"/>
+    <module name="SuppressWarnings"/>
+    <module name="AnnotationLocation"/>
+    <module name="ClassTypeParameterName"/>
+    <module name="MethodTypeParameterName"/>
+    <module name="InterfaceTypeParameterName"/>
+    <module name="AbbreviationAsWordInName"/>
+    <module name="AnonInnerLength"/>
+    <module name="ExecutableStatementCount">
+      <property name="tokens" value="INSTANCE_INIT,STATIC_INIT,METHOD_DEF,CTOR_DEF"/>
+    </module>
+    <module name="OuterTypeNumber"/>
+    <module name="SeparatorWrap"/>
+    <module name="EmptyCatchBlock"/>
+    <module name="FinalLocalVariable"/>
+    <module name="IllegalCatch"/>
+    <module name="IllegalThrows"/>
+    <module name="IllegalType">
+      <property name="tokens" value="METHOD_DEF,PARAMETER_DEF,VARIABLE_DEF"/>
+    </module>
+    <module name="MultipleVariableDeclarations"/>
+    <module name="PackageDeclaration"/>
+    <module name="OneTopLevelClass"/>
+    <module name="Indentation"/>
+    <module name="CommentsIndentation"/>
+    <module name="TodoComment"/>
+    <module name="OuterTypeFilename"/>
+    <module name="CustomImportOrder"/>
+    <module name="GenericWhitespace"/>
+    <module name="EmptyLineSeparator"/>
   </module>
-  <module name="JavadocPackage"/>
   <module name="NewlineAtEndOfFile">
     <property name="lineSeparator" value="lf"/>
   </module>
@@ -114,13 +135,10 @@ Checkstyle configuration that checks the Zyeeda coding conventions.
     <property name="format" value="\s+$"/>
     <property name="message" value="Line has trailing spaces."/>
   </module>
-  <module name="StrictDuplicateCode">
-    <property name="min" value="30"/>
-  </module>
   <module name="SuppressionCommentFilter"/>
   <module name="SuppressWithNearbyCommentFilter"/>
   <module name="SuppressionFilter">
-    <property name="file" value="https://bitbucket.org/zyeeda/zyeeda-checkstyle/raw/8dd94cb54ebd116cb43e7f3b4ef2334214698e13/src/main/resources/suppressions.xml"/>
+    <property name="file" value="https://raw.githubusercontent.com/zyeeda/checkstyle/master/src/main/resources/suppressions.xml"/>
   </module>
   <module name="UniqueProperties"/>
 </module>
